@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="3">
+    <head>
+        <meta charset="utf-8">
+        <title>Luxury Autos Homepage</title>
+        <link href="css/index.css" media="screen" rel="stylesheet">
+        <link href="css/indexPrint.css" media="print" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, intital-scale=1.0">
+        <meta name="keywords" content="Luxury, Cars, Autos, Ferrari, Lamborghini, Porsche, Dealership,">
+        <meta name="description" content="Your one stop shop for luxury cars!">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <article class="grid-container">
+        <header class="col-m-12 col-12">
+        <h1>Luxury Automotives</h1>
+        <p class="tagline">Your one stop shop for luxury cars!</p>
+        </header>
+        <nav class="col-m-12 col-12">
+            <ul>
+                <li><a href="https://www.ferrari.com/en-US">Ferrari</a></li>
+                <li><a href="https://www.lamborghini.com/en-en">Lamborghini</a></li>
+                <li><a href="https://www.porsche.com/usa/">Porsche</a></li>
+                <li><a href="https://www.astonmartin.com/en-us/">Aston Martin</a></li>
+            </ul>
+        </nav>
+       
+        <main>
+            <section class="popularCars col-m-12 col-8">
+                <h2>Hot cars!</h2>
+                <div class="split">
+                <div class="cars">
+                    <img src="media/aventadorOptimized.jpg" alt="lamborghini aventador">
+                    <p>Lamborghini Aventador<br>
+                    Price: $556,942<br>
+                    Top Speed: 220 mph<sup>*</sup><br>
+                    0-60 Acceleration: 2.8s<sup>*</sup></p>
+                </div>
+                <div class="cars">
+                    <img src="media/f12Optimized.jpg" alt="f12 berlinetta">
+                    <p>Ferrari F12<br>
+                    Price: $289,899<br>
+                    Top Speed: 211 mph<sup>*</sup><br>
+                    0-60 Acceleration: 3.1s<sup>*</sup></p>
+                </div>
+                <div class="cars">
+                    <img src="media/gt3Optimized.jpg" alt="porsche gt3">
+                    <p>Porsche 911 GT3<br>
+                    Price: $169,700<br>
+                    Top Speed: 197 mph<sup>*</sup><br>
+                    0-60 Acceleration: 3.2s<sup>*</sup></p>
+                </div>
+                <div class="cars">
+                    <img src="media/continentalGT.jpg" alt="bentley continental gt">
+                    <p>Bentley Continental GT<br>
+                    Price: $200,000<br>
+                    Top Speed: 198 mph<sup>*</sup><br>
+                    0-60 Acceleration: 3.9s<sup>*</sup></p>
+                </div>
+            </div>
+            </section>
+            <aside class="aside col-4 col-m-12">
+                <p>Click here to play rock, paper, scissors for a chance to win free merch!</p>
+                <button onclick="userPlay()">Click here to start the game!</button>
+                <script>
+                    let computerPick
+                    let result
+                    let computerWin
+                    let userWin
+                    let outcome
+                    function computerPlay(){
+                        let array = ['rock', 'paper', 'scissors']
+                        computerPick = array[Math.floor(Math.random()*array.length)]
+                        return(computerPick)
+                    }
+                    function userPlay(){
+                       let user = prompt('Rock, Paper, or Scissors? Take best of three and win free merch!',)
+                        let userPick = user.toLowerCase()
+                        computerPlay()
+                        if (userPick === computerPick) {
+                            result = 'You tied. Try again next time.'
+                        }else if (userPick === 'rock' && computerPick === 'paper'){
+                            result = 'You Lost! Try again next time.'
+                        }else if (userPick === 'rock' && computerPick === 'scissors'){
+                            result = 'You won! Contact us for free merch!'
+                        }else if (userPick === 'scissors' && computerPick === 'rock'){
+                            result = 'You Lost! Try again next time.'
+                        }else if (userPick === 'scissors' && computerPick === 'paper' ){
+                            result = 'You won! Contact us for free merch!'
+                        }else if (userPick === 'paper' && computerPick === 'scissors'){
+                            result = 'You lost! Try again next time.'
+                        }else if (userPick === 'paper' && computerPick === 'rock'){
+                            result = 'You won! Contact us for free merch!'
+                        } else {
+                            result = "You Lose! Try again next time."
+                        }
+                        alert(result)
+                   }
+                </script>
+                <div class="prize">
+                <img src="media/tshirt.jpg" alt="tshirt prize" style="margin: 10%; justify-content: end;">
+                </div>
+            </aside>
+        </main>
+        <footer class="col-m-12 col-12">
+            <h3>Contact us below for more information!</h3>
+            <div class="icon-bar">
+                    <p>
+                    <a href="https://www.twitch.tv/amillisnipez"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/benjamin-simpson-4a098a94/"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCSZdFY7kg_iqKBgzgdIJ1ng"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/simpy761"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>     
+            </div>
+            <small>&copy; Benjamin Simpson September 8, 2022<br>
+            Last Updated December 4, 2022</small>
+        </footer>
+        </article>
+    </body>
+</html> 

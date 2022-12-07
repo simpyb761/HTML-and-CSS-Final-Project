@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    background-color: black;
+}
+header{
+    text-align: center;
+    background-color: yellow;
+    border-radius: 10px;
+    margin: 1%;
+}
+h1{
+    font-size: 3em;
+    color: black;
+    text-shadow: 2px 2px black;
+}
+h2{
+    color: black;
+    background-color: white;
+    opacity: 75%;
+    width: fit-content;
+    margin-left: 15%;
+}
+.tagline{
+    text-align: right;
+    font-size: larger;  
+    color: black;
+    margin-right: 20%;
+}
+nav ul{
+	background: red;
+    width: 100%;
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	color: white;
+	font-weight: 900;
+    text-align: center;
+    border: 1px solid black;
+}
+nav ul li{
+    display: inline-table;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    padding: 3%;
+    width: 25%;
+}
+nav ul li:hover{
+    background-color: yellow;
+}
+nav ul li a:link{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+nav ul li a:visited{
+    color: black;
+}
+nav ul li a:hover{
+    color: red;
+    background: yellow;
+}
+.popularCars{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+.split{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+aside{
+    display: flex;
+    align-items: space-around;
+    
+    flex-direction: column;
+}
+aside p{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+}
+button{
+    width: 50%;
+    padding: 1%;
+    color: red;
+    background-color: yellow;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    animation: myAnimation 5s;
+}
+button:hover{
+    background-color: red;
+    color: yellow;
+}
+.cars{
+    width: 45%;}
+section div p{
+    background-color: white;
+    opacity: 75%;
+    width: auto;
+    border-radius: 5px;
+    
+}    
+img{
+    width: 75%
+}
+footer{
+    text-align: center;
+}
+h3{
+    font-size: 2.5em;
+}
+.icon-bar{
+	width: 75%;
+	background-color: yellow;
+	overflow: auto;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+}
+.icon-bar a{
+	float: left;
+	text-align: center;
+	width: 25%;
+	padding: 12px 0;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 36px;
+}
+.icon-bar a:hover{
+	background-color: black;
+    
+}
+[class*="col-"]{
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+@media only screen and (min-width:600px){
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    body{
+        background-image: url(../media/background.jpg); 
+        background-size:contain; 
+        background-repeat:no-repeat; 
+        background-position-y: 55%;
+    }
+}
+@media only screen and (min-width:768px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{
+        background-image: url(../media/background.jpg); 
+        background-size:contain; 
+        background-repeat:no-repeat; 
+        background-position-y: 55%;
+    }
+    
+}
+@keyframes myAnimation {
+    50%{transform: rotate(360deg);}
+}
